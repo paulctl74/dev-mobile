@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">AndroidERestaurant</string>
+    <string-array name="tab_entrees">
+        <item>Pâté lorrain</item>
+        <item>Charcuterie de pays</item>
+        <item>Salade du savoyard</item>
+        <item>La poutine de nos amis du quebec</item>
+    </string-array>
+    <string-array name="tab_plats">
+        <item>Tartiflette</item>
+        <item>Raclette</item>
+        <item>Fondue Savoyarde</item>
+        <item>Burger Mont Blanc</item>
+        <item>Sanglier Obélix</item>
+    </string-array>
+    <string-array name="tab_desserts">
+        <item>Glace</item>
+        <item>Tiramisu</item>
+        <item>Cheesecake</item>
+    </string-array>
 </resources>
