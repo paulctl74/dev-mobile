@@ -13,7 +13,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(binding.root)
         val extras = intent.extras
         if (extras != null) {
-            val name = extras.getString("name")
+            val name = extras.getString("nomDuPlat")
             //val price = extras.getString("price")
             //val description = extras.getString("description")
             //val image = extras.getString("image")

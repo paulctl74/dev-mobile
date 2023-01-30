@@ -2,11 +2,9 @@ package fr.isen.contal.androidrestaurant
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import fr.isen.contal.androidrestaurant.databinding.ActivityCathegorieBinding
-import java.io.Serializable
 
 class ActivityCategory : AppCompatActivity() {
     private lateinit var binding: ActivityCathegorieBinding
@@ -32,8 +30,11 @@ class ActivityCategory : AppCompatActivity() {
             startActivity(intent)
         }
         binding.choix.setOnClickListener {
-            val intent = Intent(this, DetailActivity::class.java)
-            startActivity(intent)
+            //val intent = Intent(this, DetailActivity::class.java)
+            //startActivity(intent)
+            val myIntent = Intent(this, DetailActivity::class.java)
+            myIntent.putExtra("nomDuPlat", "marche putain")
+            it.context.startActivity(myIntent)
         }
 
 
@@ -43,17 +44,17 @@ class ActivityCategory : AppCompatActivity() {
 
 
     }
-    private fun myOnClickItem(myMealDetail: DetailActivity){
+    /*private fun myOnClickItem(myMealDetail: DetailActivity){
         //Log.d("##########HUMAN############", message)
         val myIntent = Intent(this@ActivityCategory, DetailActivity::class.java)
         myIntent.putExtra("meal_infos", myMealDetail as Serializable)
         startActivity(myIntent)
-    }
+    }*/
 
 
 
 
-   /* private fun loadDishesFromAPI() {
+    /*private fun loadDishesFromAPI() {
 
         val url = "http://test.api.cartering.bluecodegame.com/menu"
         val jsonObject = JSONObject()
